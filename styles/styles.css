@@ -3,6 +3,7 @@
     padding: 0px;
     font-family: 'Poppins', sans-serif;
     font-family: 'Work Sans', sans-serif;
+    /* border: 1px solid red; */
 }
 
 .container {
@@ -13,7 +14,6 @@
     display: flex;
     padding: 50px;
     justify-content: space-around;
-    /* background-color: rgba(255, 144, 14, 0.1); */
 }
 
 .logo-text {
@@ -22,6 +22,7 @@
 
 .items {
     display: flex;
+    justify-content:space-around;
     list-style: none;
     color: #424242;
 }
@@ -71,35 +72,66 @@
 
 /* features-container */
 
-.features-container{
+.features-container {
     display: flex;
-    gap: 73px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
 }
-.service-left-container{
+
+/* left */
+.feature-left-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 24px;
     margin-top: 85px;
+    width: 60%;
 }
-.service-right-container{
-    margin-top: 330px;
+
+.feature-up, .feature-down{
+    display: flex;
 }
-.service-title{
+
+.feature {
+    padding: 10px;
+    width: 342px;
+    height: 342px;
+    margin: 10px;
+}
+
+.feature-logo {
+    width: 100%;
+    padding-bottom: 5px;
+}
+
+/* right */
+.feature-right-container {
+    margin-top: 150px;
+    padding: 10px;
+
+}
+
+.feature-title {
     font-weight: 500;
-font-size: 45px;
-color: #727272;
+    font-size: 45px;
+    color: #727272;
 }
-.text-1{
+
+.text-1 {
     font-weight: 700;
     color: #131313;
 }
-.text-2{
+
+.text-2 {
     font-weight: 700;
     color: #FF900E;
 }
-.service-description{
+
+.feature-description {
     color: #727272;
     font-weight: 400;
-font-size: 16px;
-margin-top: 24px;
+    font-size: 16px;
+    margin-top: 24px;
+
 }

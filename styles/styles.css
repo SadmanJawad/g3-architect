@@ -146,6 +146,7 @@
 /* -----------architect section----------------- */
 .architect {
     display: flex;
+    gap: 5px;
     padding-left: 15px;
     margin-top: 10px;
     justify-content: center;
@@ -155,6 +156,8 @@
 .architect-details {
     width: 600px;
     padding-left: 15px;
+    background: #ffffff;
+    box-shadow: 0px 4px 30px rgb(0 0 0 / 6%);
 }
 
 .architect-title {
@@ -184,7 +187,25 @@
 .content-description {
     color: #727272;
 }
-
+/* .button-large{
+    display:flex;
+    justify-content: center;
+    transform: translate(90px,-90px);
+}
+.btn-year{
+    border: none;
+    padding: 25px 28px;
+    font-weight: 700;
+    font-size: 40px;
+    color: #FFFFFF;
+    background-color: #FF900E;
+    border-radius: 8px;
+    transition: 0.7s ease all;
+}
+.button-large-text{
+    font-weight: 400;
+    font-size: 22px;
+} */
 
 /* facts section */
 .fact-container {
@@ -201,20 +222,26 @@
     color: #727272;
 }
 
-.fact-logo {
+.fact-boxes {
     display: flex;
+    justify-content: space-evenly;
     gap: 100px;
     text-align: center;
-    margin: 50px;
+    margin-top: 50px;
 }
 
 .box {
     height: 200px;
     width: 100%;
     box-sizing: border-box;
-    border: 1px solid #FF900E;
+    border: 1px solid #db7909;
     border-radius: 8px;
-    padding: 40px;
+    padding: 25px;
+    transition: 0.7s;
+}
+.box:hover{
+    background-color: #daa76d;
+    transform:translate(0px, 50px);
 }
 
 .box-text {
@@ -227,4 +254,71 @@
     font-weight: 600;
     font-size: 70px;
     color: #424242;
+}
+    /* contact-section */
+.contact-us{
+    margin-top: 100px;
+    background-color: wheat;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 80px 0;
+
+}
+.contact-text p{
+    font-size: large;
+    margin-top: 20px;
+    color: #3d3b3b;
+    
+}
+.contact-form{
+    display: flex;
+    flex-direction: column;
+}
+.contact-form input{
+    border: none;
+    border-radius: 5px;
+    padding: 15px 60px 15px 30px;
+    margin-bottom: 15px;
+    color: #727272;
+}
+.contact-form textarea{
+    position: relative;
+}
+
+/* Sponsor section */
+.spnsr-text{
+    text-align: center;
+}
+.sponsor-head{
+    font-weight: 700;
+font-size: 45px;
+color: #131313;
+margin-top: 180px;
+}
+.sponsor-title{
+    color: #727272;
+    font-weight: 400;
+font-size: 16px;
+margin-top: 24px;
+}
+.image-ad{
+    text-align: center;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    filter: grayscale(100%);
+}
+/* foooter */
+footer{
+    display: block;
+    width: 70%;
+    margin: 0 auto;
+}
+.footer-content{
+    text-align: center;
+    background-color: #ecbdea;
+    margin-top: 130px;
+    padding: 30px 0;
+ 
 }
